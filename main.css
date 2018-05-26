@@ -1,8 +1,13 @@
 html, body {
     margin: 0;
     padding: 0;
-    padding-bottom: 1%;
 }
+
+/* can't get fake fade to work...seems to be behind image where I move it. */
+#fade {
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255,255,255, 1))
+}
+
 header {
     background-image: url(https://i.kinja-img.com/gawker-media/image/upload/t_original/951820009082492817.jpg);
     background-repeat: no-repeat;
@@ -72,7 +77,7 @@ h5 {
 
 .flex-image {
     max-width: 100%;
-    border-radius: 70px;
+    border-radius: 25%;
     border: 1px black solid;
 }
 
@@ -104,16 +109,54 @@ h5 {
 }
 
 #comm-list {
+    display: flex;
     list-style: none;
     font-size: 3em;
     text-align: center;
     font-family: 'Indie Flower', cursive;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-right: gray double 10px;
+    padding: 1%;
+    width: 50%;
+    margin: auto;
 }
 
 #description-p {
     font-family: 'Indie Flower', cursive;
+    border-left: double gray 10px;
+    padding: 1%;
 }
 
 .break-line {
     border-bottom: gray;
+}
+
+#pros-list {
+    border-right: gray double 10px;
+    padding: 1%;
+    list-style: none;
+}
+
+#cons-list {
+    border-left: gray double 10px;
+    padding: 1%;
+    list-style: none;
+}
+
+.comm-item {
+    text-align: center;
+}
+
+#footer-div {
+    background: linear-gradient(gray, black);
+    height: 6em;
+    max-width: auto;
+    margin-top: 1%;
+}
+
+#ford-quote {
+    margin-right: 10%;
+    margin-left: 10%;
 }
