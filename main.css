@@ -105,8 +105,14 @@ h5 {
     flex-wrap: wrap-reverse;
 }
 
-#pro-list {
-    padding-top: 2%;
+#wk-list {
+    display: flex;
+    flex-direction: row;
+}
+
+#str-list {
+    display: flex; 
+    flex-direction: row;
 }
 
 .list-header {
@@ -145,13 +151,15 @@ h5 {
 }
 
 #pros-list {
-    padding: 1%;
+    padding: 3%;
     list-style: none;
+    margin: auto;
 }
 
 #cons-list {
-    padding: 1%;
+    padding: 3%;
     list-style: none;
+    margin: auto;
 }
 
 .comm-item {
@@ -199,8 +207,4 @@ max-width: 100%;
     max-width: 100%;
     height: 10em;
     padding: 1%;
-}
-
-#lists-head {
-    padding-top: 5%;
 }
